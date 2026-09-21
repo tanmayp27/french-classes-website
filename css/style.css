@@ -11,19 +11,19 @@
   --color-bg-card: #FFFFFF;
   --color-bg-subtle: #EFECE6;
   --color-bg-alt: #F0EDE5;
-  
+
   --color-text-main: #171717;
   --color-text-muted: #383531;
   --color-text-subtle: #68645E;
-  
+
   --color-accent-red: #C62828;
   --color-accent-red-hover: #A01B1B;
   --color-accent-red-light: rgba(198, 40, 40, 0.08);
-  
+
   --color-accent-blue: #263B73;
   --color-accent-blue-hover: #1A2952;
   --color-accent-blue-light: rgba(38, 59, 115, 0.08);
-  
+
   --color-border: #E5E1D8;
   --color-border-hover: #C5C0B4;
   --color-border-dark: #171717;
@@ -31,7 +31,7 @@
   /* Typography */
   --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  
+
   /* Type Scale (Content font sizes increased 2-3 levels; Headers unchanged) */
   --text-xs: clamp(0.925rem, 0.88rem + 0.25vw, 1.025rem);
   --text-sm: clamp(1.08rem, 1rem + 0.35vw, 1.2rem);
@@ -56,7 +56,7 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
-  
+
   /* Shadows & Elevation */
   --shadow-subtle: 0 4px 20px rgba(23, 23, 23, 0.04);
   --shadow-hover: 0 12px 32px rgba(23, 23, 23, 0.08);
@@ -67,7 +67,9 @@
 /* --------------------------------------------------------------------------
    02. Global Resets & Base Styles
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -105,7 +107,12 @@ body {
 }
 
 /* Typography Base */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.15;
@@ -125,7 +132,8 @@ a {
   transition: color var(--transition-fast);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -135,7 +143,10 @@ img {
   display: block;
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
   color: inherit;
 }
@@ -392,9 +403,18 @@ button, input, textarea, select {
   border-radius: 1px;
 }
 
-.french-accent-dots span:nth-child(1) { background-color: #002395; }
-.french-accent-dots span:nth-child(2) { background-color: #FFFFFF; border: 1px solid #DCD8D0; }
-.french-accent-dots span:nth-child(3) { background-color: #ED2939; }
+.french-accent-dots span:nth-child(1) {
+  background-color: #002395;
+}
+
+.french-accent-dots span:nth-child(2) {
+  background-color: #FFFFFF;
+  border: 1px solid #DCD8D0;
+}
+
+.french-accent-dots span:nth-child(3) {
+  background-color: #ED2939;
+}
 
 /* Desktop Navigation Links */
 .nav-menu {
@@ -802,8 +822,15 @@ button, input, textarea, select {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .curriculum-panel.active .curriculum-card {
@@ -1316,8 +1343,10 @@ button, input, textarea, select {
 @media (min-width: 768px) {
   .footer-bottom {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 0.75rem 1.5rem;
   }
 }
 
@@ -1329,7 +1358,7 @@ button, input, textarea, select {
   transform: translateY(35px);
   will-change: opacity, transform;
   transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .scroll-reveal.is-visible {
@@ -1343,18 +1372,41 @@ button, input, textarea, select {
 }
 
 /* Staggered card grid animations */
-.courses-grid .course-card:nth-child(2) { transition-delay: 0.08s; }
-.courses-grid .course-card:nth-child(3) { transition-delay: 0.16s; }
+.courses-grid .course-card:nth-child(2) {
+  transition-delay: 0.08s;
+}
 
-.approach-grid .approach-item:nth-child(2) { transition-delay: 0.08s; }
-.approach-grid .approach-item:nth-child(3) { transition-delay: 0.14s; }
-.approach-grid .approach-item:nth-child(4) { transition-delay: 0.20s; }
+.courses-grid .course-card:nth-child(3) {
+  transition-delay: 0.16s;
+}
 
-.audience-grid .audience-card:nth-child(2) { transition-delay: 0.08s; }
-.audience-grid .audience-card:nth-child(3) { transition-delay: 0.14s; }
-.audience-grid .audience-card:nth-child(4) { transition-delay: 0.20s; }
+.approach-grid .approach-item:nth-child(2) {
+  transition-delay: 0.08s;
+}
 
-.hero-card-container { transition-delay: 0.12s; }
+.approach-grid .approach-item:nth-child(3) {
+  transition-delay: 0.14s;
+}
+
+.approach-grid .approach-item:nth-child(4) {
+  transition-delay: 0.20s;
+}
+
+.audience-grid .audience-card:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.audience-grid .audience-card:nth-child(3) {
+  transition-delay: 0.14s;
+}
+
+.audience-grid .audience-card:nth-child(4) {
+  transition-delay: 0.20s;
+}
+
+.hero-card-container {
+  transition-delay: 0.12s;
+}
 
 /* --------------------------------------------------------------------------
    15. Accessibility & Motion Queries
@@ -1383,4 +1435,3 @@ button, input, textarea, select {
     transition: none !important;
   }
 }
-
