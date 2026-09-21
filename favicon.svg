@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#F7F5F0"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#E5E1D8" stroke-width="3"/>
+  <!-- Elegant French Tricolor Accent Accent Bar -->
+  <g transform="translate(18, 16)">
+    <rect x="0" y="0" width="8" height="32" rx="2" fill="#002395"/>
+    <rect x="10" y="0" width="8" height="32" rx="2" fill="#FFFFFF" stroke="#E0DDD5" stroke-width="1"/>
+    <rect x="20" y="0" width="8" height="32" rx="2" fill="#C62828"/>
+  </g>
+</svg>
