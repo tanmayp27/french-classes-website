@@ -640,6 +640,56 @@ select {
   color: var(--color-text-subtle);
 }
 
+.hero-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero-card.hero-card-benefits::before {
+  background-color: var(--color-accent-blue);
+}
+
+.hero-benefits-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.hero-benefits-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.hero-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.hero-benefits-list svg {
+  color: var(--color-accent-red);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.hero-benefits-list strong {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
 .hero-card-meta {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
