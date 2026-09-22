@@ -55,20 +55,39 @@ Built with **Semantic HTML5**, **Modern Vanilla CSS**, and **Vanilla JavaScript*
 
 ---
 
-## 🚀 How to Host / Deploy
+## 🚀 How to Host / Deploy (GitHub Pages)
 
-This website requires **no build step** or backend server. You can host it immediately on any static web server or CDN:
+This website is static and requires **no build step** or backend server, making it ideal for free deployment via **GitHub Pages**.
 
-### Option A: Vercel
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in the project root directory.
+### Step 1: Initialize Git & Commit Code (if not already done)
+```bash
+git init
+git add .
+git commit -m "Initial commit of Prajakta's French Tutorials website"
+```
 
-### Option B: Netlify
-1. Drag and drop the `French Website` folder into [app.netlify.com/drop](https://app.netlify.com/drop).
+### Step 2: Push to GitHub
+1. Create a new repository on [GitHub](https://github.com/new).
+2. Link your local repository and push your code to the `main` branch:
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git branch -M main
+git push -u origin main
+```
 
-### Option C: GitHub Pages
-1. Push the code to a GitHub repository.
-2. Go to **Settings > Pages** and select `main` branch.
+### Step 3: Enable GitHub Pages
+1. Go to your repository on GitHub.
+2. Navigate to **Settings** > **Pages** (in the left sidebar under *Code and automation*).
+3. Under **Build and deployment**:
+   - **Source**: Select `Deploy from a branch`.
+   - **Branch**: Select `main` branch and `/ (root)` folder.
+4. Click **Save**.
+
+### Step 4: Access Your Live Website
+Within a minute, GitHub will publish your site at:
+`https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/`
+
+*(Optional) To attach a custom domain, add your domain under **Settings > Pages > Custom domain** and configure your DNS CNAME/A records with your provider.*
 
 ---
 
